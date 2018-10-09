@@ -29,6 +29,26 @@ $(document).ready(function() {
     $("#resultgif").hide();
     $("#continue").hide();
     time = 30;
+    $("#resultgif").empty();
+   
+    if(pageCount == 1){
+        $("#resultgif").append('<img id="22a" src="assets/images/2a.webp" />');
+    }
+    if(pageCount == 2){
+        $("#resultgif").append('<img id="33a" src="assets/images/3a.gif" />');
+    }
+    if(pageCount == 3){
+        $("#resultgif").append('<img id="44a" src="assets/images/4a.gif" />');
+    }
+    if(pageCount == 4){
+        $("#resultgif").append('<img id="55a" src="assets/images/5a.gif" />');
+    }
+    if(pageCount == 5){
+        $("#resultgif").append('<img id="66a" src="assets/images/6a.webp" />');
+    }
+    if(pageCount == 6){
+        $("#resultgif").append('<img id="77a" src="assets/images/7a.gif" />');
+    }
     pageCount++;
     refreshPage();
   });
@@ -40,6 +60,8 @@ $(document).ready(function() {
       $(".btn-secondary").text("Raichu");
       $(".btn-success").text("Electabuzz");
       $(".btn-danger").text("Magmar");
+
+      $("#shadow").append('<img id="1a" src="assets/images/1.jpg" />');
 
      $(".btn-primary").on("click", function() {
         rightAnswer();
@@ -64,6 +86,9 @@ $(document).ready(function() {
       $(".btn-success").text("Metapod");
       $(".btn-danger").text("Paras");
 
+      $("#shadow").empty();
+      $("#shadow").append('<img id="2a" src="assets/images/2.png" />');
+
       $(".btn-primary").on("click", function() {
         wrongAnswer();
      });
@@ -85,6 +110,9 @@ $(document).ready(function() {
       $(".btn-secondary").text("Sandshrew");
       $(".btn-success").text("Cubone");
       $(".btn-danger").text("Marowak");
+
+      $("#shadow").empty();
+      $("#shadow").append('<img id="3a" src="assets/images/3.png" />');
 
       $(".btn-primary").on("click", function() {
         wrongAnswer();
@@ -109,6 +137,9 @@ $(document).ready(function() {
       $(".btn-success").text("Clefairy");
       $(".btn-danger").text("Growlithe");
 
+      $("#shadow").empty();
+      $("#shadow").append('<img id="4a" src="assets/images/4.png" />');
+
       $(".btn-primary").on("click", function() {
         wrongAnswer();
      });
@@ -124,6 +155,8 @@ $(document).ready(function() {
      $(".btn-danger").on("click", function() {
         rightAnswer();
       });
+
+
     }
 
    else if (pageCount == 5) {
@@ -131,6 +164,9 @@ $(document).ready(function() {
       $(".btn-secondary").text("Mankey");
       $(".btn-success").text("Golduck");
       $(".btn-danger").text("Machoke");
+
+      $("#shadow").empty();
+      $("#shadow").append('<img id="5a" src="assets/images/5.png" />');
 
       $(".btn-primary").on("click", function() {
         rightAnswer();
@@ -154,6 +190,9 @@ $(document).ready(function() {
       $(".btn-success").text("Arcanine");
       $(".btn-danger").text("Ponyta");
 
+      $("#shadow").empty();
+      $("#shadow").append('<img id="6a" src="assets/images/6.jpg" />');
+
       $(".btn-primary").on("click", function() {
         wrongAnswer();
      });
@@ -175,6 +214,9 @@ $(document).ready(function() {
       $(".btn-secondary").text("Growlithe");
       $(".btn-success").text("Eevee");
       $(".btn-danger").text("Vulpix");
+
+      $("#shadow").empty();
+      $("#shadow").append('<img id="7a" src="assets/images/7.png" />');
 
       $(".btn-primary").on("click", function() {
         wrongAnswer();
