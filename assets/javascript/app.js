@@ -4,6 +4,7 @@ $(document).ready(function() {
   var correct = 0;
   var incorrect = 0;
   var unanswered = 0;
+  var answer = "Pikachu";
 
   //Hide result page and buttons
   $("#result").hide();
@@ -60,6 +61,7 @@ $(document).ready(function() {
       $(".btn-secondary").text("Raichu");
       $(".btn-success").text("Electabuzz");
       $(".btn-danger").text("Magmar");
+      answer = "Pikachu";
 
       $("#shadow").append('<img id="1a" src="assets/images/1.jpg" />');
 
@@ -85,6 +87,8 @@ $(document).ready(function() {
       $(".btn-secondary").text("Weepinbell");
       $(".btn-success").text("Metapod");
       $(".btn-danger").text("Paras");
+      answer = "Metapod";
+
 
       $("#shadow").empty();
       $("#shadow").append('<img id="2a" src="assets/images/2.png" />');
@@ -110,6 +114,8 @@ $(document).ready(function() {
       $(".btn-secondary").text("Sandshrew");
       $(".btn-success").text("Cubone");
       $(".btn-danger").text("Marowak");
+      answer = "Cubone";
+
 
       $("#shadow").empty();
       $("#shadow").append('<img id="3a" src="assets/images/3.png" />');
@@ -136,6 +142,7 @@ $(document).ready(function() {
       $(".btn-secondary").text("Kadabra");
       $(".btn-success").text("Clefairy");
       $(".btn-danger").text("Growlithe");
+      answer = "Growlithe";
 
       $("#shadow").empty();
       $("#shadow").append('<img id="4a" src="assets/images/4.png" />');
@@ -164,6 +171,7 @@ $(document).ready(function() {
       $(".btn-secondary").text("Mankey");
       $(".btn-success").text("Golduck");
       $(".btn-danger").text("Machoke");
+      answer = "Psyduck";
 
       $("#shadow").empty();
       $("#shadow").append('<img id="5a" src="assets/images/5.png" />');
@@ -189,6 +197,7 @@ $(document).ready(function() {
       $(".btn-secondary").text("Tauros");
       $(".btn-success").text("Arcanine");
       $(".btn-danger").text("Ponyta");
+      answer = "Ponyta";
 
       $("#shadow").empty();
       $("#shadow").append('<img id="6a" src="assets/images/6.jpg" />');
@@ -214,6 +223,7 @@ $(document).ready(function() {
       $(".btn-secondary").text("Growlithe");
       $(".btn-success").text("Eevee");
       $(".btn-danger").text("Vulpix");
+      answer = "Eevee";
 
       $("#shadow").empty();
       $("#shadow").append('<img id="7a" src="assets/images/7.png" />');
@@ -256,7 +266,7 @@ $(document).ready(function() {
     correct++;
   }
   var wrongAnswer = function(){
-    $("#result").text("Nope!");
+    $("#result").text("Nope! The correct answer is: "+answer);
     incorrect++;
   }
 
