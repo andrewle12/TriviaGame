@@ -69,20 +69,33 @@ $(document).ready(function() {
       $("#shadow").append('<img id="1a" src="assets/images/1.jpg" />');
 
       $(".btn-primary").on("click", function() {
-        rightAnswer();
+        if(pageCount == 1){
+          rightAnswer();
+          correct++;
+      }
+       
       });
 
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
-      });
+        if(pageCount == 1){
+          wrongAnswer();
+          incorrect++;
+      };
+    });
 
-      $(".btn-success").on("click", function() {
+    $(".btn-success").on("click", function() {
+      if(pageCount == 1){
         wrongAnswer();
-      });
+        incorrect++;
+    };
+  });
 
-      $(".btn-danger").on("click", function() {
-        wrongAnswer();
-      });
+  $(".btn-danger").on("click", function() {
+    if(pageCount == 1){
+      wrongAnswer();
+      incorrect++;
+  };
+});
   
     } else if (pageCount == 2) {
       $(".btn-primary").text("Kakuna");
@@ -95,21 +108,36 @@ $(document).ready(function() {
       $("#shadow").append('<img id="2a" src="assets/images/2.png" />');
 
       $(".btn-primary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 2){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 2){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-success").on("click", function() {
-        rightAnswer();
+        if(pageCount == 2){
+          rightAnswer();
+          correct++;
+      }
+       
       });
 
       $(".btn-danger").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 2){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
-  
     } else if (pageCount == 3) {
       $(".btn-primary").text("Meowth");
       $(".btn-secondary").text("Sandshrew");
@@ -121,19 +149,34 @@ $(document).ready(function() {
       $("#shadow").append('<img id="3a" src="assets/images/3.png" />');
 
       $(".btn-primary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 3){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
-
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 3){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-success").on("click", function() {
-        rightAnswer();
+        if(pageCount == 3){
+          rightAnswer();
+          correct++;
+      }
+       
       });
 
       $(".btn-danger").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 3){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
   
     } else if (pageCount == 4) {
@@ -147,19 +190,34 @@ $(document).ready(function() {
       $("#shadow").append('<img id="4a" src="assets/images/4.png" />');
 
       $(".btn-primary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 4){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 4){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-success").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 4){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
-
       $(".btn-danger").on("click", function() {
-        rightAnswer();
+        if(pageCount == 4){
+          rightAnswer();
+          correct++;
+      }
+       
       });
   
     } else if (pageCount == 5) {
@@ -173,19 +231,35 @@ $(document).ready(function() {
       $("#shadow").append('<img id="5a" src="assets/images/5.png" />');
 
       $(".btn-primary").on("click", function() {
-        rightAnswer();
+        if(pageCount == 5){
+          rightAnswer();
+          correct++;
+      }
+       
       });
 
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 5){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-success").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 5){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-danger").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 5){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
   
     } else if (pageCount == 6) {
@@ -199,19 +273,35 @@ $(document).ready(function() {
       $("#shadow").append('<img id="6a" src="assets/images/6.jpg" />');
 
       $(".btn-primary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 6){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 6){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-success").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 6){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-danger").on("click", function() {
-        rightAnswer();
+        if(pageCount == 6){
+          rightAnswer();
+          correct++;
+      }
+       
       });
   
     } else if (pageCount == 7) {
@@ -225,19 +315,35 @@ $(document).ready(function() {
       $("#shadow").append('<img id="7a" src="assets/images/7.png" />');
 
       $(".btn-primary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 7){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-secondary").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 7){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
 
       $(".btn-success").on("click", function() {
-        rightAnswer();
+        if(pageCount == 7){
+          rightAnswer();
+          correct++;
+      }
+       
       });
 
       $(".btn-danger").on("click", function() {
-        wrongAnswer();
+        if(pageCount == 7){
+          wrongAnswer();
+          incorrect++;
+      }
+       
       });
   
     } else if (pageCount == 8) {
@@ -261,12 +367,10 @@ $(document).ready(function() {
   //Functions for right or wrong answer
   var rightAnswer = function() {
     $("#result").text("Correct!");
-    correct++;
     console.log("Correct: "+correct);
   };
   var wrongAnswer = function() {
     $("#result").text("Nope! The correct answer is: " + answer);
-    incorrect++;
     console.log("Incorrect: "+incorrect);
   };
   var noAnswer = function() {
