@@ -368,15 +368,18 @@ $(document).ready(function() {
   var rightAnswer = function() {
     $("#result").text("Correct!");
     console.log("Correct: "+correct);
+    stop();
   };
   var wrongAnswer = function() {
     $("#result").text("Nope! The correct answer is: " + answer);
     console.log("Incorrect: "+incorrect);
+    stop();
   };
   var noAnswer = function() {
     $("#result").text("Nope! The correct answer is: " + answer);
     unanswered++;
     console.log("Unanswered "+unanswered);
+    stop();
   };
 
   refreshPage();
